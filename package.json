@@ -17,7 +17,8 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^50.0.1",
+    "prettier": "3.2.4",
     "typescript": "*"
   },
-  "type":"module"
+  "type": "module"
 }
