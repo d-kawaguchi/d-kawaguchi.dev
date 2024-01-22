@@ -4,7 +4,8 @@
   "description": "d-kawaguchi.dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "d-kawaguchi",
   "devDependencies": {
@@ -17,6 +18,8 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^50.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "prettier": "3.2.4",
     "typescript": "*"
   },
