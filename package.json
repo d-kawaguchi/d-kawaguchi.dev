@@ -4,10 +4,16 @@
   "description": "d-kawaguchi.dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "prepare": "husky install"
   },
   "author": "d-kawaguchi",
+  "dependencies": {
+    "astro": "^4.7.1"
+  },
   "devDependencies": {
     "@eslint/js": "^8.56.0",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
