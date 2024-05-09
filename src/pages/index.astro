@@ -1,17 +1,13 @@
 ---
-// Astroへようこそ！この3つのダッシュで囲まれた部分のコードが、
-// 「コンポーネントフロントマター」です。ブラウザで実行されることはありません。
-console.log('これはブラウザではなく、ターミナルで実行されます！');
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<!-- 以下は「コンポーネントテンプレート」です。これは単なるHTMLですが
-     しかし、優れたテンプレートを作成するための魔法がいくつか散りばめられています。 -->
-<html>
-<body>
-<h1>Hello, World!</h1>
-</body>
-</html>
+
+<BaseLayout title="d-kawaguchi.dev">
+  <h1>Hello, World!</h1>
+</BaseLayout>
+
 <style>
-    h1 {
-        color: orange;
-    }
+  h1 {
+    color: orange;
+  }
 </style>
