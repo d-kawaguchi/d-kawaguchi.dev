@@ -12,6 +12,7 @@
   },
   "author": "d-kawaguchi",
   "dependencies": {
+    "@acab/reset.css": "^0.9.0",
     "astro": "^4.7.1"
   },
   "devDependencies": {
