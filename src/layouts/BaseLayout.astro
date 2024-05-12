@@ -1,5 +1,5 @@
 ---
-import "@acab/reset.css";
+import "../styles/global.css";
 const { title } = Astro.props;
 ---
 
@@ -13,6 +13,20 @@ const { title } = Astro.props;
   </head>
 
   <body>
-    <slot />
+    <div class="main-wrapper">
+      <main>
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
+
+<style>
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    margin: 64px 32px;
+  }
+</style>

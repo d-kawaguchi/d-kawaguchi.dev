@@ -3,11 +3,47 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="d-kawaguchi.dev">
-  <h1>Hello, World!</h1>
-</BaseLayout>
+  <div class="stack">
+    <hgroup class="page-title stack--item">
+      <h1 class="page-title__main">d-kawaguchi</h1>
+      <p class="page-title__sub">HTML, CSS, JavaScript, WebAccessibility</p>
+    </hgroup>
 
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+    <p class="stack--item">
+      静岡県在住のフロントエンドエンジニアです。<br />
+      Web制作、システム開発など承ります。お気軽にご相談ください。
+    </p>
+
+    <dl class="stack--item">
+      <dt>連絡先</dt>
+      <dd>
+        <a href="kawaguchi.dik@gmail.com" itemprop="email"
+          >kawaguchi.dik@gmail.com</a
+        >
+      </dd>
+      <dt>GitHub</dt>
+      <dd><a href="https://github.com/d-kawaguchi">d-kawaguchi</a></dd>
+    </dl>
+  </div>
+
+  <style>
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+
+    .stack--item {
+      margin: 0;
+    }
+
+    .page-title__main {
+      font-size: 2.4rem;
+      font-weight: var(--font-weight-base);
+      letter-spacing: 0.06em;
+    }
+    .page-title__sub {
+      margin-top: 4px;
+    }
+  </style>
+</BaseLayout>
