@@ -1,0 +1,43 @@
+@layer reset, base, theme;
+
+@import "@acab/reset.css" layer(reset);
+
+@layer base {
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans", Meiryo, sans-serif;
+    letter-spacing: 0.04em;
+    font-feature-settings: "palt";
+  }
+}
+
+@layer theme {
+  :root {
+    /* カラー */
+    --color-background: #373c38;
+    --color-text: #fcfaf2;
+    --color-link: #a5dee4;
+
+    /* フォント */
+    --font-size-base: 18px;
+    --font-weight-base: 300;
+    --line-height-base: 1.6;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
+  }
+
+  /* TODO: link, visit, hover, active の指定  */
+  a {
+    color: var(--color-link);
+  }
+
+  dd {
+    margin-left: 1.5em;
+  }
+}
