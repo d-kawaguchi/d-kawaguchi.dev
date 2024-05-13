@@ -6,7 +6,6 @@
   body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
       "Hiragino Sans", Meiryo, sans-serif;
-    letter-spacing: 0.04em;
     font-feature-settings: "palt";
   }
 }
@@ -17,11 +16,13 @@
     --color-background: #373c38;
     --color-text: #fcfaf2;
     --color-link: #a5dee4;
+    --color-decorative: #77969a;
 
     /* フォント */
     --font-size-base: 18px;
     --font-weight-base: 300;
     --line-height-base: 1.6;
+    --letter-spacing-base: 0.04em;
   }
 
   body {
@@ -30,6 +31,7 @@
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-base);
     line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-base);
   }
 
   /* TODO: link, visit, hover, active の指定  */
@@ -38,6 +40,6 @@
   }
 
   dd {
-    margin-left: 1.5em;
+    padding-left: 1.5em;
   }
 }
