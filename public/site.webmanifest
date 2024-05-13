@@ -1,0 +1,20 @@
+{
+  "name": "d-kawaguchi.dev",
+  "short_name": "d-kawaguchi",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#77969a",
+  "background_color": "#373c38",
+  "start_url": "/",
+}
