@@ -15,7 +15,7 @@
     /* カラー */
     --color-background: #373c38;
     --color-text: #fcfaf2;
-    --color-link: #a5dee4;
+    --color-anchor: #a5dee4;
     --color-decorative: #77969a;
 
     /* フォント */
@@ -34,12 +34,15 @@
     letter-spacing: var(--letter-spacing-base);
   }
 
-  /* TODO: link, visit, hover, active の指定  */
   a {
-    color: var(--color-link);
+    color: var(--color-anchor);
   }
 
   dd {
     padding-left: 1.5em;
+  }
+
+  :focus {
+    outline: 2px currentColor solid;
   }
 }
