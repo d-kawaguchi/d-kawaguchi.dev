@@ -1,0 +1,41 @@
+{
+  "name": "d-kawaguchi.dev",
+  "version": "0.0.1",
+  "description": "d-kawaguchi.dev",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prepare": "husky install"
+  },
+  "author": "d-kawaguchi",
+  "dependencies": {
+    "@acab/reset.css": "^0.9.0",
+    "astro": "^4.7.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "postcss-html": "^1.6.0",
+    "prettier": "3.2.4",
+    "prettier-plugin-astro": "^0.13.0",
+    "stylelint": "^16.2.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-prettier": "^5.0.0",
+    "typescript": "*"
+  },
+  "type": "module"
+}

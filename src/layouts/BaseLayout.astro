@@ -1,0 +1,77 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<html lang="ja">
+  <head prefix="og:http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="d-kawaguchi のウェブページです。Web制作やシステム開発など、お気軽にご相談ください。"
+    />
+    <meta name="theme-color" content="#373c38" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:title" content="d-kawaguchi.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://d-kawaguchi.dev/" />
+    <meta property="og:image" content="https://d-kawaguchi.dev/ogp.png" />
+    <meta property="og:image:alt" content="d-kawaguchi.dev" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="d-kawaguchi.dev" />
+    <meta
+      property="og:description"
+      content="d-kawaguchi のウェブページです。Web制作やシステム開発など、お気軽にご相談ください。"
+    />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@d_kawaguchi_dev" />
+    <meta name="twitter:title" content="d-kawaguchi.dev" />
+    <meta
+      name="twitter:description"
+      content="d-kawaguchi のウェブページです。Web制作やシステム開発など、お気軽にご相談ください。"
+    />
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <main>
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
+
+<style>
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    margin: 64px 32px;
+  }
+
+  @media (width < 576px) {
+    main {
+      flex: 1 1 auto;
+      margin: 32px 16px;
+      padding-left: 1.2em;
+    }
+  }
+
+  @media (576px <= width < 992px) {
+    main {
+      margin: 32px 24px 32px 72px;
+      padding-left: 1.2em;
+    }
+  }
+</style>

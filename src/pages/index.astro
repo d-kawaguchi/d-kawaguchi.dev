@@ -1,0 +1,143 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="d-kawaguchi.dev">
+  <div class="stack">
+    <hgroup class="stack--item page-title markup-block">
+      <h1 class="page-title__main markup-block">d-kawaguchi</h1>
+      <p class="page-title__sub markup-block">
+        HTML, CSS, JavaScript, Web-Accessibility, ...
+      </p>
+    </hgroup>
+
+    <p class="stack--item page-text markup-block">
+      静岡県在住のフロントエンドエンジニアです。<br />
+      Web制作、システム開発など承ります。お気軽にご相談ください。
+    </p>
+
+    <dl class="stack--item markup-block contact-list">
+      <dt class="contact-list__term markup-block">連絡先</dt>
+      <dd class="contact-list__description markup-block">
+        <a href="mailto:kawaguchi.dik@gmail.com" itemprop="email"
+          >kawaguchi.dik@gmail.com</a
+        >
+      </dd>
+      <dt class="contact-list__term markup-block">GitHub</dt>
+      <dd class="contact-list__description markup-block">
+        <a href="https://github.com/d-kawaguchi">d-kawaguchi</a>
+      </dd>
+      <dt class="contact-list__term markup-block">Twitter</dt>
+      <dd class="contact-list__description markup-block">
+        <a href="https://twitter.com/d_kawaguchi_dev">@d_kawaguchi_dev</a>
+      </dd>
+    </dl>
+  </div>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      padding: 1.6em 4.8em 3.6em 1.4em;
+      border-left: var(--color-decorative) 1px solid;
+    }
+
+    .stack > .stack--item {
+      padding: 1em 0 0 0;
+    }
+
+    .markup-block {
+      position: relative;
+    }
+
+    .markup-block::before {
+      display: block;
+      position: absolute;
+      width: 4.2em;
+      left: -6.4em;
+      text-align: right;
+      color: var(--color-decorative);
+      font-size: 16px;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: normal;
+    }
+
+    .page-title::before {
+      content: "hgroup";
+      top: -0.2em;
+    }
+
+    .page-title__main {
+      font-size: 2.4rem;
+      font-weight: var(--font-weight-base);
+      letter-spacing: 0.06em;
+    }
+
+    .page-title__main::before {
+      content: "h1";
+      top: 0.4em;
+      letter-spacing: var(--letter-spacing-base);
+      line-height: var(--line-height-base);
+    }
+
+    .page-title__sub {
+      margin-top: 8px;
+    }
+
+    .page-title__sub::before {
+      content: "p";
+      top: -0.2em;
+    }
+
+    .page-text::before {
+      content: "p";
+      top: 0.6em;
+    }
+
+    .contact-list::before {
+      content: "dl";
+      top: 0;
+    }
+
+    .contact-list__term {
+      margin-top: 0.8em;
+    }
+
+    .contact-list__term::before {
+      content: "dt";
+      top: 0;
+    }
+
+    .contact-list__description::before {
+      content: "dd";
+      top: 0.2em;
+    }
+
+    @media (width < 576px) {
+      .stack {
+        padding: 1.6em 0 3.6em 1em;
+      }
+
+      .markup-block::before {
+        width: 2em;
+        left: -3.6em;
+      }
+
+      .page-title::before {
+        display: none;
+      }
+    }
+
+    @media (576px <= width < 992px) {
+      .stack {
+        padding: 1.6em 0 3.6em 1em;
+      }
+    }
+  </style>
+</BaseLayout>
