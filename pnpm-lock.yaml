@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@acab/reset.css':
-        specifier: ^0.10.0
-        version: 0.10.0
+        specifier: ^0.11.0
+        version: 0.11.0
       astro:
         specifier: ^5.2.6
         version: 5.2.6(@types/node@22.10.2)(jiti@2.4.2)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.7.0)
@@ -78,8 +78,8 @@ importers:
 
 packages:
 
-  '@acab/reset.css@0.10.0':
-    resolution: {integrity: sha512-99vTN5JMd3X+DQhR7XNC5Vc92YxzQvPbT+jnNy5uuFTcBlo0RpMBaR6/U5ZXt/cEjkZ0LDHUu8XGCQOlAvuNIQ==}
+  '@acab/reset.css@0.11.0':
+    resolution: {integrity: sha512-m9p/vUDxzXd8u0EYwHNKZOmjEY4DQHPq7H4/7EbZuxzTQ/KtVtc1sfhwoOBBpG3QtTNIL9FBX5wQ8xhrjfimog==}
 
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
@@ -3251,7 +3251,7 @@ packages:
 
 snapshots:
 
-  '@acab/reset.css@0.10.0': {}
+  '@acab/reset.css@0.11.0': {}
 
   '@astrojs/compiler@2.10.3': {}
 
