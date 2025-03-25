@@ -22,8 +22,8 @@ importers:
         specifier: ^19.8.0
         version: 19.8.0
       '@eslint/js':
-        specifier: ^9.22.0
-        version: 9.22.0
+        specifier: ^9.23.0
+        version: 9.23.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.27.0
         version: 8.27.0(@typescript-eslint/parser@8.27.0(typescript@5.8.2))(typescript@5.8.2)
@@ -390,8 +390,8 @@ packages:
     resolution: {integrity: sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
-  '@eslint/js@9.22.0':
-    resolution: {integrity: sha512-vLFajx9o8d1/oL2ZkpMYbkLv8nDB6yaIwFNt7nI4+I80U/z03SxmfOMsLbvWr3p7C+Wnoh//aOu2pQW8cS0HCQ==}
+  '@eslint/js@9.23.0':
+    resolution: {integrity: sha512-35MJ8vCPU0ZMxo7zfev2pypqTwWTofFZO6m4KAtdoFhRpLJUpHTZZ+KB3C7Hb1d7bULYwO4lJXGCi5Se+8OMbw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@img/sharp-darwin-arm64@0.33.5':
@@ -3333,7 +3333,7 @@ snapshots:
 
   '@eslint-community/regexpp@4.12.1': {}
 
-  '@eslint/js@9.22.0': {}
+  '@eslint/js@9.23.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
