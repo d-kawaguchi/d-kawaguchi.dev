@@ -13,7 +13,7 @@
   "author": "d-kawaguchi",
   "dependencies": {
     "@acab/reset.css": "^0.11.0",
-    "astro": "^5.9.2"
+    "astro": "^5.11.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
